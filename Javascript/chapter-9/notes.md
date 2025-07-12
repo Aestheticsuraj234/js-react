@@ -8,7 +8,7 @@ An **event** is an action or occurrence that happens in the browser which JavaSc
 
 * User clicks a button → `click`
 * Page finishes loading → `load`
-* Key is pressed → `keydown`
+* Key is pressed → `keydown` 
 * Form is submitted → `submit`
 * Mouse moves over an element → `mouseover`
 
