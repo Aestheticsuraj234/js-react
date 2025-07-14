@@ -1,0 +1,11 @@
+{
+    "name":"Suraj Kumar Jha",
+    "email":"suraj@google.com",
+    "password":123434,
+    "isProgrammer":true,
+    "gf":null,
+    "myAddres":{
+        "address1":"on internet"
+    },
+    "hobbies":["coding" , "gym" , "music"]
+}
