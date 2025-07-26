@@ -2,6 +2,7 @@ import React from 'react'
 import Form from './Form'
 import NameList from './NameList'
 import Welcome from './Welcome'
+import Hooks from './Hooks'
 
 const App = () => {
 
@@ -21,7 +22,8 @@ const App = () => {
   return (
 
     <div>
-      <Welcome isLogged={false}/>
+      <Hooks/>
+      {/* <Welcome isLogged={false}/> */}
       {/* <NameList/> */}
       {/* <Form/> */}
     </div>
