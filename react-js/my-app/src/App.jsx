@@ -1,5 +1,7 @@
 import React from 'react'
 import Form from './Form'
+import NameList from './NameList'
+import Welcome from './Welcome'
 
 const App = () => {
 
@@ -19,7 +21,9 @@ const App = () => {
   return (
 
     <div>
-      <Form/>
+      <Welcome isLogged={false}/>
+      {/* <NameList/> */}
+      {/* <Form/> */}
     </div>
 
     // <form onSubmit={handleSubmit}>
