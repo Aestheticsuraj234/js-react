@@ -1,8 +1,12 @@
-import React from 'react'
+import React , {useContext, useState} from 'react'
+import { globalContext } from './context/GlobalContext'
 
 const H1 = () => {
+  const {greet , setGreet} = useContext(globalContext);
   return (
-    <div>H1</div>
+    <div>
+      {greet}
+    </div>
   )
 }
 

@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Form from './Form'
 import NameList from './NameList'
 import Welcome from './Welcome'
 import Hooks from './Hooks'
+import Com from './Com'
+import H1 from './H1'
 
 const App = () => {
 
+  const [greet , setGreet] = useState("Hello World")
 // const onClickAlert = ()=>{
 //   alert("Button Clicked")
 // }
@@ -22,7 +25,9 @@ const App = () => {
   return (
 
     <div>
+      <H1/>
       <Hooks/>
+      <Com greet={greet}/>
       {/* <Welcome isLogged={false}/> */}
       {/* <NameList/> */}
       {/* <Form/> */}
