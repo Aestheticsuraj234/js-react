@@ -1,55 +1,52 @@
-// let myObj = {
-//     name:"Suraj",
-//     age:21,
-//     isProgrammer:true,
-//     languages:["c++" , "java" , "python" , "typescript"],
+// const Person = {
+//   name:"Alice",
+//   age:25,
+//   isStudent:true
 // }
 
-// let person = new Object();
+// console.log(Person)
 
-// person.name = "Suraj";
-// person.age = 21;
-// person.isProgrammer = true;
-// person.languages = ["c++" , "java" , "python" , "typescript"];
+// const car = new Object();
+// car.make = "Honda";
+// car.model = "Civic";
+// car.year = 2019;
 
-// console.log(person)
+// console.log(car);
 
-let myObj = {
-  name: "Suraj",
-  age: 21,
-  isProgrammer: true,
-  languages: ["c++", "java", "python", "typescript"],
-  greet: function () {
-    console.log("Hello world");
+const Person = {
+  name:"Alice",
+  age:25,
+  greet: function() {
+    console.log("Hello, I'm " + this.name);
   },
-};
+  isStudent:true
+}
 
-// const a = { x: 1 };
-// const b = { y: 2 };
-// const result = Object.assign({}, a, b);
-// console.log(result);
+// Person.greet();
 
-// console.log(Object.entries(myObj))
+// console.log(Person["name"])
 
-// console.log(Object.values(myObj))
+// Person.city = "Delhi";
 
-// console.log(Object.keys(myObj))
+// Person.age = 21;
 
-// const settings = { darkMode: true };
-// console.log(settings.hasOwnProperty("darkMode"));
-// Object.freeze(settings);
-// settings.darkMode = false;
-// console.log(settings.darkMode);
+// delete Person.isStudent;
 
-// console.log(myObj["name"])
+// console.log(Person)
 
-// delete myObj.isProgrammer
+// for(let key in Person){
+//   console.log(eky, Person[key])
+// }
 
-// change the value
-// myObj.name = "Karan";
+console.log(Object.values(Person));
 
-// add a new property
-// myObj.hobbies = ["coding" , "reading" , "listening to music"];
+console.log(Object.entries(Person));
 
-// get the elem
-// console.log(myObj)
+console.log(Object.keys(Person));
+
+
+
+const settings = { darkMode: true };
+Object.freeze(settings);
+settings.darkMode = false;
+console.log(settings.darkMode); 
