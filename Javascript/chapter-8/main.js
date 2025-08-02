@@ -1,1 +1,1 @@
-console.log("Hello DOM!")
+// alert("Hello world")
