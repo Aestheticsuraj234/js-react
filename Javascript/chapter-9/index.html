@@ -9,32 +9,35 @@
         #parent {
             width: 200px;
             height: 200px;
-            background-color: lightcoral;
-            position: relative;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-
         #child {
             width: 100px;
             height: 100px;
-            background-color: lightgreen;
-            position: absolute;
-            top: 50px;
-            left: 50px;
+            background-color: lightcoral;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
 </head>
 <body>
-    <!-- <button onclick="console.log('Hello World')">Click</button> -->
-    
+    <!-- <button onclick="alert('Button clicked!')">
+        Click me
+    </button> -->
+    <button id="myButton">
+        Click me
+
+    </button>
+
     <div id="parent">
         <div id="child">
-            Child
+            hello world
         </div>
     </div>
-
-     <script src="main.js">
-
-     </script>
+    <script src="main.js"></script>
 </body>
 </html>
-
